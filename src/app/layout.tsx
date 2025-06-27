@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Navatim labs",
+  title: "Navatim Labs",
   description: "Giving African businesses the 0-1 unparalled leverage",
 };
 

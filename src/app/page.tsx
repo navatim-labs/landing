@@ -170,15 +170,15 @@ function App() {
           }`}>
             At NAVATIM labs, we are an innovation lab dedicated to building transformative tools, systems,
             and protocols that empower African businesses to achieve unparalleled growth. 
-            Through cutting-edge technologies like blockchain, zero-knowledge proofs (ZK), and artificial intelligence (AI),
+            Through cutting-edge technologies like blockchain, programmable cryptographic proving systems, and intelligence systems,
             we create solutions that address the most pressing challenges and opportunities in the African market.
           </p>
           <p className={`mb-6 leading-relaxed transition-colors duration-300 ${
             isDarkMode ? 'text-gray-300' : 'text-gray-700'
           }`}>
           Our research-driven approach identifies the most pressing challenges and opportunities in the African market.
-          By leveraging cutting-edge technologies like blockchain, AI, and cybersecurity, we build forward-thinking, scalable solutions that are tailored to the unique needs of African businesses.
-          Whether you are a startup looking to disrupt or an established enterprise aiming to optimize, our tools, systems, and protocols are designed to give you the 0-1 leverage you need to thrive in a competitive and rapidly evolving landscape
+          We build forward-thinking, scalable solutions that are tailored to the unique needs of African businesses.
+          Whether you are a startup looking to disrupt or an established enterprise aiming to optimize and experiment, our tools, systems, and protocols are designed to give you the 0-1 leverage you need to thrive in a competitive and rapidly evolving landscape
           </p>
           <p className={`leading-relaxed transition-colors duration-300 ${
             isDarkMode ? 'text-gray-300' : 'text-gray-700'
