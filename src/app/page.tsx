@@ -42,7 +42,7 @@ function App() {
                     isDarkMode ? 'bg-[#64ffda]' : 'bg-blue-500'
                   }`}></span>
                 </a>
-                <a href="#" className={`px-3 py-2 text-sm tracking-wider font-medium transition-all duration-300 relative group ${
+                <a href="/products" className={`px-3 py-2 text-sm tracking-wider font-medium transition-all duration-300 relative group ${
                   isDarkMode ? 'text-gray-300 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
                 }`}>
                   <span className="relative z-10">PRODUCTS</span>
@@ -122,7 +122,7 @@ function App() {
             }`}>
               ABOUT
             </a>
-            <a href="#" className={`block px-3 py-2 text-sm tracking-wider font-medium rounded-md transition-colors duration-300 ${
+            <a href="/products" className={`block px-3 py-2 text-sm tracking-wider font-medium rounded-md transition-colors duration-300 ${
               isDarkMode 
                 ? 'text-gray-300 hover:text-[#64ffda] hover:bg-[#233554]/50' 
                 : 'text-gray-600 hover:text-blue-500 hover:bg-blue-50'
@@ -163,29 +163,166 @@ function App() {
           <h1 className={`text-4xl font-bold mb-8 tracking-tight transition-colors duration-300 ${
             isDarkMode ? 'text-white' : 'text-[#0a192f]'
           }`}>
-            Giving African businesses the 0-1 unparalled leverage
+            Giving businesses leverage with our research on private programmable cryptographic computation systems and safety systems for fintech.
           </h1>
-          <p className={`mb-6 leading-relaxed transition-colors duration-300 ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
-            At NAVATIM labs, we are an innovation lab dedicated to building transformative tools, systems,
-            and protocols that empower African businesses to achieve unparalleled growth. 
-            Through cutting-edge technologies like blockchain, programmable cryptographic proving systems, and intelligence systems,
-            we create solutions that address the most pressing challenges and opportunities in the African market.
-          </p>
-          <p className={`mb-6 leading-relaxed transition-colors duration-300 ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
-          Our research-driven approach identifies the most pressing challenges and opportunities in the African market.
-          We build forward-thinking, scalable solutions that are tailored to the unique needs of African businesses.
-          Whether you are a startup looking to disrupt or an established enterprise aiming to optimize and experiment, our tools, systems, and protocols are designed to give you the 0-1 leverage you need to thrive in a competitive and rapidly evolving landscape
-          </p>
-          <p className={`leading-relaxed transition-colors duration-300 ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
-            We are aiming to build a lab that experiment new technology, adapt fast and integrate to our lives and giving us the leverage to accelerate.
-            But our scope is on business integration and new experimental technologies that emerge from our research and product driven system
-          </p>
+          {/* there should be a line seperator here */}
+          <div
+            className={`my-8 h-[2px] w-full bg-gradient-to-r ${
+              isDarkMode
+                ? 'from-transparent via-[#233554] to-transparent'
+                : 'from-transparent via-blue-200 to-transparent'
+            }`}
+          />
+          {/* Problems Section */}
+          <section className="mb-12">
+            <h2 className={`text-2xl font-semibold mb-6 transition-colors duration-300 ${
+              isDarkMode ? 'text-white' : 'text-[#0a192f]'
+            }`}>
+              Problems We Are Currently Focusing On
+            </h2>
+            <div className="grid gap-6">
+              <div className={`rounded-xl border p-5 transition-colors duration-300 ${
+                isDarkMode ? 'border-[#233554] bg-[#0b1e3a]' : 'border-blue-100 bg-blue-50'
+              }`}>
+                <h3 className={`text-lg font-semibold mb-2 ${
+                  isDarkMode ? 'text-white' : 'text-[#0a192f]'
+                }`}>
+                  1. Transaction Safety and Web3 App Interactions
+                </h3>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Blockchain’s permissionless and decentralized nature attracts bad-faith actors who exploit vulnerabilities. At the
+                  same time, there is no safety net for human mistakes. Our product protects people from losing funds due to errors
+                  such as sending to the wrong address, incorrect interactions with apps, or falling victim to malicious actors.
+                </p>
+              </div>
+              <div className={`rounded-xl border p-5 transition-colors duration-300 ${
+                isDarkMode ? 'border-[#233554] bg-[#0b1e3a]' : 'border-blue-100 bg-blue-50'
+              }`}>
+                <h3 className={`text-lg font-semibold mb-2 ${
+                  isDarkMode ? 'text-white' : 'text-[#0a192f]'
+                }`}>
+                  2. Private Interaction with Intelligent Systems
+                </h3>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  We are developing solutions that enable private interactions with large language models such as ChatGPT and Claude.
+                  Our research focuses on preserving the privacy of user instructions and data when interacting with existing AI systems.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Team Section */}
+          <section className="mb-12">
+            <h2 className={`text-2xl font-semibold mb-6 transition-colors duration-300 ${
+              isDarkMode ? 'text-white' : 'text-[#0a192f]'
+            }`}>
+              Team Experience
+            </h2>
+            <div className="grid gap-6">
+              <div className={`rounded-xl border p-5 transition-colors duration-300 ${
+                isDarkMode ? 'border-[#233554] bg-[#0b1e3a]' : 'border-blue-100 bg-blue-50'
+              }`}>
+                <h3 className={`text-lg font-semibold mb-2 ${
+                  isDarkMode ? 'text-white' : 'text-[#0a192f]'
+                }`}>
+                  Taha Farouq
+                </h3>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Cybersecurity professional with 5 years of experience across government, health, finance, law enforcement, and
+                  education sectors. Currently a Cyber Security Technical Trainer at OffSec. Specializes in security research and has
+                  uncovered multiple CVEs verified by NIST MITRE, including CVE-2023-43959, CVE-2023-43960, and CVE-2023-52275.
+                </p>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Holds multiple certifications: eJPT, OSCP, OSWP, OSDA, OSWA, OSCC, CRTO, and OSEP. In his free time, he researches
+                  open-source software, contributes to projects, and participates in CTFs and attackathons.
+                </p>
+                <div className="mt-4 flex items-center space-x-6">
+                  <a
+                    href="https://github.com/tahaafarooq/tahaafarooq"
+                    aria-label="Taha Farouq GitHub"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://x.com/tahaafarooq"
+                    aria-label="Taha Farouq X (Twitter)"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/tahaa-f-0784901b9/"
+                    aria-label="Taha Farouq LinkedIn"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
+              <div className={`rounded-xl border p-5 transition-colors duration-300 ${
+                isDarkMode ? 'border-[#233554] bg-[#0b1e3a]' : 'border-blue-100 bg-blue-50'
+              }`}>
+                <h3 className={`text-lg font-semibold mb-2 ${
+                  isDarkMode ? 'text-white' : 'text-[#0a192f]'
+                }`}>
+                  Mrisho Lukamba
+                </h3>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  Blockchain protocol engineer with 4 years of experience building blockchain products and core systems. Previously
+                  worked at NEOM and trained in programmable cryptography engineering. Currently pursuing an undergraduate degree in
+                  Mathematics.
+                </p>
+                <div className="mt-4 flex items-center space-x-6">
+                  <a
+                    href="https://github.com/MrishoLukamba"
+                    aria-label="Mrisho Lukamba GitHub"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://x.com/MrishoLukamba"
+                    aria-label="Mrisho Lukamba X (Twitter)"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="www.linkedin.com/in/mrisho-lukamba"
+                    aria-label="Mrisho Lukamba LinkedIn"
+                    className={`transition-all duration-300 hover:scale-110 ${
+                      isDarkMode ? 'text-gray-400 hover:text-[#64ffda]' : 'text-gray-600 hover:text-blue-500'
+                    }`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </div>
